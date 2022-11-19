@@ -19,6 +19,7 @@
   </head>
 
   <body>
+    <!-- HEADER -->
     <header class="header-section">
       <div class="container header-container">
         <nav class="header-navigation">
@@ -59,10 +60,11 @@
       </div>
     </header>
 
-    <!-- Filters Section -->
+   
     <main>
       <section class="section portfolio-button-section">
         <div class="container">
+          <!-- Filters Section -->
           <ul class="portfolio-button-list">
             <li class="portfolio-button-list-item"><button class="portfolio-filter current-filter" type="button">All</button></li>
             <li class="portfolio-button-list-item"><button class="portfolio-filter" type="button">Web-sites</button></li>
@@ -255,8 +257,7 @@
               </li>
             </ul>
           </address>
-        </div>
-        
+        </div>        
         <!-- FOOTER SOCIAL LINKS -->
         <div class="footer-container-middle">
           <h3 class="footer-socials-title">FIND US ON</h3>
@@ -290,6 +291,22 @@
               </a>
             </li>
           </ul>
+        </div>
+        <!-- FOOTER SUBSCRIBE FORM -->
+        <div class="footer-container-right">
+          <p class="footer-subscribe-form-title">SUBSCRIBE TO THE NEWSLETTER</p>
+          <form class="footer-subscribe-form" name="newsletter_signup_form" 
+          autocomplete="on" novalidate>
+            <label>
+              <input type="text" class="footer-subscribe-form-input"  
+                name="email" placeholder="E-mail"/> 
+            </label>
+            <button class="footer-subscribe-form-button" type="submit">Subscribe
+              <svg class="footer-subscribe-form-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
