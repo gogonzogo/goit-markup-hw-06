@@ -19,6 +19,7 @@
   </head>
 
   <body>
+    <!-- HEADER -->
     <header class="header-section">
       <div class="container header-container">
         <nav class="header-navigation">
@@ -164,7 +165,6 @@
         </div>
       </section>
       
-
       <!-- OUR TEAM -->
       <section class="section our-team-section">
         <div class="container">
@@ -452,6 +452,22 @@
             </li>
           </ul>
         </div>
+        <!-- FOOTER SUBSCRIBE FORM -->
+        <div class="footer-container-right">
+          <p class="footer-subscribe-form-title">SUBSCRIBE TO THE NEWSLETTER</p>
+          <form class="footer-subscribe-form" name="newsletter_signup_form" 
+          autocomplete="on" novalidate>
+            <label>
+              <input type="text" class="footer-subscribe-form-input"  
+                name="email" placeholder="E-mail"/> 
+            </label>
+            <button class="footer-subscribe-form-button" type="submit">Subscribe
+              <svg class="footer-subscribe-form-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -463,6 +479,46 @@
             <use href="./images/sprite.svg#icon-close-five"></use>
           </svg>
         </button>
+        
+        <!-- MODAL FORM -->
+        <div calss-="modal-form-container">
+          <h3 class="modal-form-title">Leave your information and we'll call you back</h3>
+          <form class="modal-form">
+            <label class="modal-form-label name">Name
+              <svg class="modal-icon person" width="18" height="18">
+                <use href="./images/sprite.svg#icon-person-black"></use>
+              </svg>
+              <input class="modal-form-field name" type="text" name="name" placeholder=" "/>
+            </label>
+             <label class="modal-form-label phone">Phone
+              <svg class="modal-icon phone" width="18" height="18">
+                <use href="./images/sprite.svg#icon-phone-black"></use>
+              </svg>
+              <input class="modal-form-field phone" type="text" name="phone" placeholder=" "/>
+            </label>
+            <label class="modal-form-label email">E-mail
+              <svg class="modal-icon email" width="18" height="18">
+                <use href="./images/sprite.svg#icon-email-black"></use>
+              </svg>
+              <input class="modal-form-field email" type="text" name="email" placeholder=" "/>
+            </label>
+            <label class="modal-form-label comments">Comments
+              <textarea class="modal-form-field-comments" name="comments"
+                rows="6" placeholder="Enter the text">
+              </textarea>
+            </label>
+            <label class="modal-form-checkbox-label"> I agree with the newsletter and accept the Terms and Conditions
+              <input class="modal-form-field-checkbox" type="checkbox" 
+                name="agree" value="agree"/>
+              <span class="modal-checkbox">
+                <svg class="modal-check" width="16" height="15">
+                  <use href="./images/sprite.svg#icon-check"></use>
+                </svg>
+              </span>
+            </label>
+             <button class="modal-form-button" type="submit">Send</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
