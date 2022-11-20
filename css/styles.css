@@ -418,7 +418,17 @@ img {
     background-color: var(--accent-color);
 }
 
-.terms-conditions {
+.modal-form-checkbox-label {
+        font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: calc(24/14);
+            letter-spacing: 0.03em;
+            color: var(--medium-text-color);
+}
+
+.terms-conditions-link {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
