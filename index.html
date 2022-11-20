@@ -458,11 +458,11 @@
           <form class="footer-subscribe-form" name="newsletter_signup_form" 
           autocomplete="on" novalidate>
             <label>
-              <input type="text" class="footer-subscribe-form-input"  
+              <input type="text" class="footer-subscribe-input"  
                 name="email" placeholder="E-mail"/> 
             </label>
-            <button class="footer-subscribe-form-button" type="submit">Subscribe
-              <svg class="footer-subscribe-form-icon" width="24" height="24">
+            <button class="footer-subscribe-button" type="submit">Subscribe
+              <svg class="footer-subscribe-icon" width="24" height="24">
                 <use href="./images/sprite.svg#icon-send"></use>
               </svg>
             </button>
@@ -471,7 +471,7 @@
       </div>
     </footer>
 
-    <!-- MODAL WINDOW SCRIPT -->
+    <!-- MODAL WINDOW -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <button type="button" class="modal-close-button" data-modal-close>
@@ -503,15 +503,13 @@
               <input class="modal-form-field email" type="text" name="email" placeholder=" "/>
             </label>
             <label class="modal-form-label comments">Comments
-              <textarea class="modal-form-field-comments" name="comments"
-                rows="6" placeholder="Enter the text">
-              </textarea>
+              <textarea class="modal-form-comments" placeholder="Enter the text" name="comments" rows="6"></textarea>
             </label>
-            <label class="modal-form-checkbox-label"> I agree with the newsletter and accept the Terms and Conditions
+            <label class="modal-form-checkbox-label"><a class="terms-conditions" href="#">I agree with the newsletter and accept the Terms and Conditions</a>
               <input class="modal-form-field-checkbox" type="checkbox" 
                 name="agree" value="agree"/>
               <span class="modal-checkbox">
-                <svg class="modal-check" width="16" height="15">
+                <svg class="modal-check" width="11" height="8">
                   <use href="./images/sprite.svg#icon-check"></use>
                 </svg>
               </span>
